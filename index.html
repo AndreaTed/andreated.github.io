@@ -1,31 +1,39 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Andrea Tedesco - Presentazione</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andrea Tedesco - Introduction</title>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f4f4f9;
       color: #333;
-      max-width: 800px;
+      max-width: 900px;
       margin: 40px auto;
       padding: 20px;
       line-height: 1.6;
     }
-    header {
-      text-align: center;
+    .container {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      flex-wrap: wrap;
     }
     img {
       border-radius: 50%;
-      width: 150px;
-      height: 150px;
+      width: 180px;
+      height: 180px;
       object-fit: cover;
-      margin-top: 20px;
+      flex-shrink: 0;
+    }
+    header {
+      flex: 1;
+      min-width: 250px;
     }
     h1 {
       color: #1e3a8a;
+      margin-top: 0;
     }
     a {
       color: #2563eb;
@@ -36,34 +44,67 @@
     }
     .button {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
+      margin-top: 15px;
+      padding: 10px 18px;
       background-color: #2563eb;
       color: white;
       border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
     }
     .button:hover {
       background-color: #1e40af;
     }
+    section {
+      margin-top: 40px;
+    }
+    h2 {
+      color: #1e3a8a;
+      border-bottom: 2px solid #2563eb;
+      padding-bottom: 6px;
+      margin-bottom: 15px;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <img src="IMG_6775.jpg" alt="Foto di Andrea Tedesco" />
-    <h1>Ciao, sono Andrea Tedesco</h1>
-    <p>Studente di matematica con passione per l’epidemiologia matematica, la programmazione e l’analisi dati.</p>
-    <a href="CV_Eng.pdf" class="button" target="_blank">Scarica il mio CV</a>
-  </header>
+  <div class="container">
+    <img src="IMG_6775.jpg" alt="Andrea Tedesco" />
+    <header>
+      <h1>Hello, I'm Andrea Tedesco</h1>
+      <p>I am a mathematics student passionate about mathematical epidemiology, programming, and data analysis.</p>
+      <p>I am currently finishing my master's thesis and plan to pursue a PhD in the future.</p>
+      <a href="CV_Eng.pdf" class="button" target="_blank" rel="noopener noreferrer">Download my CV</a>
+    </header>
+  </div>
 
   <section>
-    <h2>Le mie passioni</h2>
+    <h2>My Interests</h2>
     <ul>
-      <li>Modellizzazione matematica di malattie infettive</li>
-      <li>Algoritmi di programmazione</li>
-      <li>Analisi dati e machine learning</li>
-      <li>Calcio e Football Data Analytics</li>
+      <li>Mathematical modeling of infectious diseases</li>
+      <li>Programming algorithms</li>
+      <li>Data analysis and machine learning</li>
+      <li>Football and Football Data Analytics</li>
     </ul>
-    <p>📧 Contattami: <a href="mailto:andrea@example.com">andrea@example.com</a></p>
+  </section>
+
+  <section>
+    <h2>Research & Projects</h2>
+    <p>This section can showcase my research work, thesis, or projects related to epidemiology, programming, or football analytics.</p>
+    <ul>
+      <li><strong>Master's Thesis:</strong> Developing a mathematical model simulating the spread of infectious diseases.</li>
+      <li><strong>Algorithm Development:</strong> Created original algorithms for parameter estimation and data analysis.</li>
+      <li><strong>Football Analytics Project:</strong> Data analysis of football matches using machine learning techniques.</li>
+      <!-- Add more items as you like -->
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Feel free to reach out: <a href="mailto:andrea@example.com">andrea@example.com</a></p>
   </section>
 </body>
 </html>

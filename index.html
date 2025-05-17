@@ -2,24 +2,68 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Andrea Tedesco - Presentazione</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 700px; margin: 40px auto; line-height: 1.6; }
-    h1 { color: #004080; }
-    a { color: #0066cc; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+    }
+    img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      margin-top: 20px;
+    }
+    h1 {
+      color: #1e3a8a;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background-color: #2563eb;
+      color: white;
+      border-radius: 6px;
+    }
+    .button:hover {
+      background-color: #1e40af;
+    }
   </style>
 </head>
 <body>
-  <h1>Ciao, sono Andrea Tedesco</h1>
-  <p>Sono uno studente di matematica con passione per l’epidemiologia matematica, la programmazione e l’analisi dati.</p>
-  <p>Sto completando la mia tesi magistrale e vorrei iniziare un dottorato in futuro.</p>
-  <h2>Le mie passioni</h2>
-  <ul>
-    <li>Modellizzazione matematica di malattie infettive</li>
-    <li>Algoritmi di programmazione</li>
-    <li>Analisi dati e machine learning</li>
-    <li>Calcio e Football Data Analytics</li>
-  </ul>
-  <p>Per contattarmi: <a href="mailto:andrea@example.com">andrea@example.com</a></p>
+  <header>
+    <img src="IMG_6775.jpg" alt="Foto di Andrea Tedesco" />
+    <h1>Ciao, sono Andrea Tedesco</h1>
+    <p>Studente di matematica con passione per l’epidemiologia matematica, la programmazione e l’analisi dati.</p>
+    <a href="CV_Eng.pdf" class="button" target="_blank">Scarica il mio CV</a>
+  </header>
+
+  <section>
+    <h2>Le mie passioni</h2>
+    <ul>
+      <li>Modellizzazione matematica di malattie infettive</li>
+      <li>Algoritmi di programmazione</li>
+      <li>Analisi dati e machine learning</li>
+      <li>Calcio e Football Data Analytics</li>
+    </ul>
+    <p>📧 Contattami: <a href="mailto:andrea@example.com">andrea@example.com</a></p>
+  </section>
 </body>
 </html>
